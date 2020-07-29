@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/sessions_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Session"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"/>
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <ListView
+                android:id="@+id/overall_session_view"
+                android:layout_width="wrap_content"
+                android:layout_height="215dp"
+                android:fadeScrollbars="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true" /></ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/laps_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selection: "
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/view_session_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:padding="2px"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp">
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:fillViewport="true">
+            <ListView
+                android:id="@+id/overall_lap_view"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:fadeScrollbars="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true" /></ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

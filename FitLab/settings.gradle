@@ -1,0 +1,2 @@
+rootProject.name='FitLab'
+include ':app'

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBack">
+    <TextView
+        android:id="@+id/user_weight_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:visibility="invisible"/>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/initial_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to FitLab"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/info_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In order to use all functions of the Timer you must create a profile"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/button_timer_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="10dp"
+        android:text="Timer"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Select:   "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/profile_list"
+                android:layout_width="120dp"
+                android:layout_height="30sp"
+                android:textAlignment="center"
+                android:background="@color/colorFade"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Display Name:     "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/display_name_entry"
+                android:layout_width="165dp"
+                android:layout_height="40dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Weight(Pounds): "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/weight_measurement_entry"
+                android:layout_width="165dp"
+                android:layout_height="40dp">
+            </EditText>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_settings_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="5dp"
+            android:text="Save"
+            android:onClick="saveButton"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
