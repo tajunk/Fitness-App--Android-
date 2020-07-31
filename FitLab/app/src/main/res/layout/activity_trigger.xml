@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorBack">
+    android:background="@color/colorBack"
+    android:orientation="vertical">
 
     <Chronometer
         android:id="@+id/stop_watch"
@@ -12,12 +12,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="5dp"
         android:textSize="48sp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:layout_marginBottom="5dp" >
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/button_start"
             android:layout_width="82dp"
@@ -26,11 +28,12 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_style"
             android:onClick="startChronometer"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="Start"
             android:textAllCaps="false"
             android:textSize="15sp" />
+
         <Button
             android:id="@+id/button_pause"
             android:layout_width="82dp"
@@ -39,11 +42,12 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/button_style"
             android:onClick="pauseChronometer"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="Pause"
             android:textAllCaps="false"
             android:textSize="15sp" />
+
         <Button
             android:id="@+id/button_reset"
             android:layout_width="82dp"
@@ -51,16 +55,18 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_style"
             android:onClick="resetChronometer"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="Reset"
             android:textAllCaps="false"
             android:textSize="15sp" />
     </LinearLayout>
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="160dp"
         android:fillViewport="true">
+
         <ListView
             android:id="@+id/list_view_laps"
             android:layout_width="wrap_content"
@@ -68,87 +74,96 @@
             android:fadeScrollbars="false"
             android:scrollbarAlwaysDrawVerticalTrack="true" />
     </ScrollView>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:orientation="horizontal"
         android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:paddingLeft="8dp"
         android:paddingRight="8dp">
+
         <Button
             android:id="@+id/button_save_session"
             android:layout_width="75dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/button_style"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="New"
             android:textAllCaps="false"
             android:textSize="15sp" />
+
         <Button
             android:id="@+id/button_done"
             android:layout_width="82dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/button_style"
             android:onClick="doneButton"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="Done"
             android:textAllCaps="false"
             android:textSize="15sp" />
+
         <Button
             android:id="@+id/button_lap"
             android:layout_width="82dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/button_style"
             android:onClick="lapChronometer"
-            android:paddingRight="20sp"
             android:paddingLeft="20sp"
+            android:paddingRight="20sp"
             android:text="Lap"
             android:textAllCaps="false"
             android:textSize="15sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="15sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20sp"
-            android:text="Selected Session: "
             android:layout_gravity="center"
+            android:text="Selected Session: "
             android:textSize="14sp"></TextView>
+
         <TextView
             android:id="@+id/selected_session_box"
             android:layout_width="wrap_content"
             android:layout_height="20sp"
-            android:text=""
             android:layout_gravity="center"
+            android:text=""
             android:textSize="14sp"></TextView>
+
         <TextView
             android:id="@+id/selected_test_id"
             android:layout_width="wrap_content"
             android:layout_height="20sp"
-            android:text=""
             android:layout_gravity="center"
+            android:text=""
             android:textSize="14sp"></TextView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="40sp"
@@ -162,63 +177,68 @@
             android:layout_width="125dp"
             android:layout_height="40dp"
             android:textAlignment="center"
-            android:tooltipText="Create an Activity"
-            android:textSize="14sp"></EditText>
+            android:textSize="14sp"
+            android:tooltipText="Create an Activity"></EditText>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20sp"
-            android:text="Approximate Pace "
             android:layout_gravity="center_vertical"
+            android:text="Approximate Pace "
             android:textSize="14sp" />
+
         <Spinner
             android:id="@+id/speed_type"
             android:layout_width="180dp"
             android:layout_height="40sp"
-            android:background="@color/colorFade"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal" />
+            android:background="@color/colorFade" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:orientation="horizontal"
         android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20sp"
-            android:text="Automatic Laps     "
             android:layout_gravity="center_vertical"
+            android:text="Automatic Laps     "
             android:textSize="14sp" />
+
         <Spinner
             android:id="@+id/auto_spinner"
             android:layout_width="180dp"
             android:layout_height="40sp"
-            android:background="@color/colorFade"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal" />
+            android:background="@color/colorFade" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="-8dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_marginTop="-8dp"
         android:text="Pace/Auto optional. Auto Lap is off while Manual is set"
         android:textSize="12sp" />
 </LinearLayout>
