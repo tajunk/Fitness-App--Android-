@@ -42,9 +42,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         myDb = new DBManager(this);
 
-        initialMessage = (TextView) findViewById(R.id.initial_message);
         userWeight = (TextView) findViewById(R.id.user_weight_box);
-        infoMessage = (TextView) findViewById(R.id.info_message);
         nameEntry = (EditText) findViewById(R.id.display_name_entry);
         weightEntry = (EditText) findViewById(R.id.weight_measurement_entry);
         moveTimer = (Button) findViewById(R.id.button_timer_main);

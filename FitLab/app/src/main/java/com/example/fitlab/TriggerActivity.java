@@ -2,6 +2,7 @@ package com.example.fitlab;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -65,6 +66,7 @@ public class TriggerActivity extends AppCompatActivity implements AdapterView.On
         myDb = new DBManager(this);
 
         stopWatch = findViewById(R.id.stop_watch);
+        stopWatch.setTypeface(ResourcesCompat.getFont(this, R.font.alba____));
         stopWatch.setFormat("%s");
         stopWatch.setBase(SystemClock.elapsedRealtime());
 

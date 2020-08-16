@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FitLab</string>
+    <string name="app_name"></string>
     <string name="preference_key_user_name">user_name</string>
     <string name="preference_key_weight">weight</string>
 </resources>
