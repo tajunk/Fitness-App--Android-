@@ -10,7 +10,9 @@
         android:layout_height="wrap_content"
         android:text="Lap  "
         android:textSize="18sp"
+        android:layout_marginLeft="30dp"
         android:fontFamily="@font/traffolight"
+        android:textColor="@color/colorBlack"
         android:textAlignment="center"
         android:padding="6dp">
     </TextView>
@@ -21,7 +23,7 @@
         android:text="Lap"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:fontFamily="@font/alba____"
+        android:fontFamily="@font/primitive"
         android:textAlignment="center"
         android:padding="6dp"
         android:layout_marginLeft="5dp">
@@ -33,7 +35,8 @@
         android:fontFamily="@font/traffolight"
         android:padding="6dp"
         android:text="Time  "
-        android:layout_marginLeft="85dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="25dp"
         android:textAlignment="center"
         android:textSize="18sp"></TextView>
 
@@ -44,7 +47,7 @@
         android:text="Time"
         android:textSize="18sp"
         android:textColor="#fff"
-        android:fontFamily="@font/alba____"
+        android:fontFamily="@font/primitive"
         android:textAlignment="center"
         android:padding="6dp">
     </TextView>

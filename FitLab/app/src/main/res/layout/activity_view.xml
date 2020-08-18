@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorBack">
+    android:background="#24252a">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,12 +19,14 @@
             android:id="@+id/sessions_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select a Session"
+            android:text="SELECT SESSION"
             android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:textSize="20sp"
-            android:textColor="@color/colorBlack"/>
+            android:textColor="#fff"
+            android:fontFamily="@font/traffolight"/>
         <ScrollView
-            android:layout_width="300dp"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:fillViewport="true">
             <ListView
@@ -32,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="215dp"
                 android:fadeScrollbars="false"
+                android:background="#555555"
                 android:scrollbarAlwaysDrawVerticalTrack="true" /></ScrollView>
     </LinearLayout>
     <LinearLayout
@@ -43,10 +46,11 @@
             android:id="@+id/laps_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selection: "
+            android:text="SESSION DETAILS "
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
-            android:textColor="@color/colorBlack"/>
+            android:textColor="#fff"
+            android:fontFamily="@font/traffolight"/>
         <TextView
             android:id="@+id/view_session_box"
             android:layout_width="wrap_content"
@@ -54,8 +58,9 @@
             android:text=""
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
-            android:padding="2px"
-            android:textColor="@color/colorBlack"/>
+            android:paddingLeft="15dp"
+            android:textColor="#a6bdcc"
+            android:fontFamily="@font/traffolight"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -67,15 +72,57 @@
         android:paddingRight="20dp"
         android:paddingBottom="5dp">
         <ScrollView
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="160dp"
             android:fillViewport="true">
-            <ListView
-                android:id="@+id/overall_lap_view"
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                android:fadeScrollbars="false"
-                android:scrollbarAlwaysDrawVerticalTrack="true" /></ScrollView>
+
+        <ListView
+            android:id="@+id/overall_lap_view"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:fadeScrollbars="false"
+            android:layout_margin="5dp"
+            android:background="#555555"
+            android:scrollbarAlwaysDrawVerticalTrack="true" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_style"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="HOME"
+            android:textColor="#fff"
+            android:fontFamily="@font/traffolight"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/timer_button"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_style"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="TIMER"
+            android:textColor="#fff"
+            android:fontFamily="@font/traffolight"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>

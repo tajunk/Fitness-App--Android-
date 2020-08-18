@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +24,8 @@ public class ViewActivity extends AppCompatActivity implements AdapterView.OnIte
     DBManager myDb;
     TextView selectedSession;
     ListView displayedSessions;
+    Button btnHome;
+    Button btnTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,6 +49,23 @@ public class ViewActivity extends AppCompatActivity implements AdapterView.OnIte
                 String sessionName = session.getListName();
                 selectedSession.setText(sessionName);
                 loadLapsListView(sessionName);
+            }
+        });
+        btnHome = (Button)findViewById(R.id.home_button);
+        btnTimer = (Button)findViewById(R.id.timer_button);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(ViewActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+    });
+        btnTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewActivity.this, TriggerActivity.class);
+                startActivity(intent);
             }
         });
     }

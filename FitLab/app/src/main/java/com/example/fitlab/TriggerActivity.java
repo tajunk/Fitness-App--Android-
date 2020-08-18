@@ -66,7 +66,7 @@ public class TriggerActivity extends AppCompatActivity implements AdapterView.On
         myDb = new DBManager(this);
 
         stopWatch = findViewById(R.id.stop_watch);
-        stopWatch.setTypeface(ResourcesCompat.getFont(this, R.font.alba____));
+        stopWatch.setTypeface(ResourcesCompat.getFont(this, R.font.primitive));
         stopWatch.setFormat("%s");
         stopWatch.setBase(SystemClock.elapsedRealtime());
 
